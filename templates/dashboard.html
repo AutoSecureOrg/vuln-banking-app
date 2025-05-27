@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1 class="dashboard-title">Welcome to Your Dashboard</h1>
+        <h2>{{ user[1] }}</h2>
+        <p>Account Balance: ${{ user[3] }}</p>
+
+        <!-- Buttons Container -->
+        <div class="buttons-container">
+            <!-- Row for the first two buttons -->
+            <div class="button-row">
+                <div class="dashboard-button">
+                    <a href="/transfer">
+                        <img src="/static/transfer.jpeg" alt="Transfer Funds">
+                        <p>Transfer Funds</p>
+                    </a>
+                </div>
+
+                <div class="dashboard-button">
+                    <a href="/view_logs">
+                        <img src="/static/history.png" alt="Transaction History">
+                        <p>Transaction History</p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Third button centered below -->
+            <div class="dashboard-button center">
+                <a href="/feedback">
+                    <img src="/static/feedback.png" alt="Leave Feedback">
+                    <p>Leave Feedback</p>
+                </a>
+            </div>
+        </div>
+
+        <a href="/" class="logout-button">Logout</a>
+    </div>
+</body>
+</html>

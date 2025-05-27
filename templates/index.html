@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Banking App</title>
+</head>
+<body>
+    <div class="split-container">
+        <!-- Left Section -->
+        <div class="left-section">
+            <img src="/static/logo.png" alt="Bank Logo" class="logo-index">
+            <h1 class="welcome-title">Welcome to The Secure Bank</h1>
+        </div>
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <form method="post" class="index-login-form">
+                <label class="index-label">Username:</label>
+                <input type="text" name="username" class="index-input" required><br>
+                <label class="index-label">Password:</label>
+                <input type="password" name="password" class="index-input" required><br>
+                <input class="index-button" type="submit" value="Login">
+            </form>
+            <div class="index-signup-link">
+                <a href="/signup">Signup</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

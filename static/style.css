@@ -1,0 +1,474 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text color */
+    text-align: center;
+}
+/* General Body Styling */
+
+
+
+.index-login-form input[type="text"]:focus,
+.index-login-form input[type="password"]:focus {
+    border-color: teal; /* Green border on focus */
+    outline: none;
+}
+
+
+/* Dashboard Container */
+.dashboard-container {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 20px; /* Space between buttons */
+}
+
+/* Dashboard Button */
+.dashboard-button {
+    background-color: #1e1e1e; /* Dark background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 200px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.dashboard-button:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 6px 15px teal;
+}
+
+/* Dashboard Button Link */
+.dashboard-button a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Icon Styling */
+.dashboard-button img {
+    width: 80px; /* Icon size */
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+/* Text Styling */
+.dashboard-button p {
+    font-size: 16px;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* Logout Button Styling */
+.logout-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff; /* Text color */
+    background-color: teal;
+    border: 2px solid teal;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+/* Hover Effect for Logout Button */
+.logout-button:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 6px 15px white;
+}
+
+
+/* Headings */
+h1 {
+    color: white; /* Highlighted headings */
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: teal; /* Highlighted headings */
+    margin-bottom: 0px;
+}
+
+
+/* Links */
+a {
+    text-decoration: none;
+    color:teal; /* Green for links */
+}
+
+a:hover {
+    color: rgb(5, 58, 58); /* Lighter green on hover */
+}
+
+/* Form Styling */
+form {
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+    background-color: #1e1e1e; /* Darker form background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Input Fields */
+input[type="text"], input[type="password"], input[type="number"] {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #333333;
+    background-color: #2e2e2e; /* Dark input fields */
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+/* Input Fields on Focus */
+input[type="text"]:focus, input[type="password"]:focus, input[type="number"]:focus {
+    border-color: teal; /* Green border on focus */
+    outline: none;
+}
+
+/* Buttons */
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: teal; /* Green button */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(9, 61, 61); /* Lighter green on hover */
+}
+
+/* Feedback and Other Text */
+p {
+    color: #bbbbbb; /* Light gray for general text */
+}
+
+/* Feedback Entries */
+.feedback-entry {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #1e1e1e;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+/* Centering Container */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #121212; /* Background color */
+    margin: 0;
+}
+
+/* Form Container */
+.form-container {
+    background-color: #1e1e1e; /* Dark background for the form */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 300px;
+}
+/* Form Container */
+.hist-form-container {
+    background-color: #1e1e1e; /* Dark background for the form */
+    padding: 30px;
+
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 300px;
+}
+
+/* Form Title */
+.form-title {
+    color: teal; /* Highlighted title color */
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+form label {
+    color: #ffffff; /* Label text color */
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    background-color: #2e2e2e; /* Input background */
+    color: #ffffff; /* Input text color */
+}
+
+form input:focus {
+    border-color: teal; /* Green border on focus */
+    outline: none;
+}
+
+/* Submit Button */
+.form-button {
+    padding: 10px 20px;
+    background-color: teal; /* Green button */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.form-button:hover {
+    background-color: rgb(8, 43, 43); /* Lighter green on hover */
+}
+
+/* Submit Button */
+.history-button {
+    padding: 10px 20px;
+    background-color: teal; /* Green button */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.history-button:hover {
+    background-color: rgb(8, 43, 43); /* Lighter green on hover */
+}
+
+
+/* Split Container */
+.split-container {
+    display: flex; /* Create two vertical sections */
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+}
+
+/* Left Section */
+.left-section {
+    flex: 1; /* Take 50% of the width */
+    display: flex;
+    flex-direction: column;
+    /*justify-content: normal;  Center vertically */
+    align-items: center; /* Center horizontally */
+    background-color: #121212; /* Keep the dark background */
+    text-align: center;
+}
+
+.left-section .logo {
+    margin-top: -50px; /* Move the logo up */
+    width: 150px; /* Logo size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.left-section .welcome-title {
+    color: white; /* Highlighted title color */
+    font-size: 28px;
+    text-align: center;
+    margin-top: -70px; /* Move the logo up */
+    padding-left: 20px;
+
+}
+
+/* Right Section */
+.right-section {
+    flex: 1; /* Take 50% of the width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    background-color: #0c0c0c; /* Keep the dark background */
+}
+
+/* Login Form */
+.index-login-form {
+    background-color: #1e1e1e; /* Dark form background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    width: 300px;
+}
+
+.index-label {
+    color: #ffffff; /* Label text color */
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.index-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    background-color: #2e2e2e; /* Input background */
+    color: #ffffff; /* Input text color */
+}
+
+.index-input:focus {
+    border-color: rgb(6, 58, 58); /* Green border on focus */
+    outline: none;
+}
+
+.index-button {
+    padding: 10px 20px;
+    background-color: rgb(8, 59, 59); /* Green button */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.index-button:hover {
+    background-color: rgb(9, 58, 58); /* Lighter green on hover */
+}
+
+/* Signup Link */
+.index-signup-link {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.index-signup-link a {
+    color: teal; /* Light green for the link */
+    text-decoration: none;
+    font-size: 18px
+}
+
+.index-signup-link a:hover {
+    color: rgb(7, 65, 65); /* Darker green on hover */
+}
+
+.logo-index {
+    width: 500px;
+    height: auto;
+    padding-top: 110px;
+}
+
+/* Adjust logo size for mobile screens */
+@media (max-width: 768px) {
+    .logo-index {
+        width: 200px; /* Smaller logo on mobile */
+    }
+}
+
+.home-link{
+    padding-top: 30px;
+}
+/* General Dashboard Styling */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Buttons Container Styling */
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Spacing between rows */
+}
+
+/* Button Row Styling */
+.button-row {
+    display: flex;
+    gap: 20px; /* Spacing between buttons */
+    justify-content: center; /* Center the row horizontally */
+}
+
+/* Center Single Button */
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+/* Dashboard Button */
+.dashboard-button {
+    background-color: #1e1e1e; /* Dark background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 200px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.dashboard-button:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 6px 15px teal;
+}
+
+/* Button Link Styling */
+.dashboard-button a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Button Icon Styling */
+.dashboard-button img {
+    width: 80px; /* Icon size */
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+/* Button Text Styling */
+.dashboard-button p {
+    font-size: 16px;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* Logout Button Styling */
+.logout-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff; /* Text color */
+    background-color: teal;
+    border: 2px solid teal;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logout-button:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 6px 15px white;
+}

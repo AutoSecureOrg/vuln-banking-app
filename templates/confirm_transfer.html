@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Confirm Transfer</title>
+</head>
+<body>
+    <div class="center-container">
+        <div class="form-container">
+            <h1 class="form-title">Confirm Transfer</h1>
+            <p>Sender: {{ sender[1] }}</p>
+            <p>Recipient: {{ recipient[1] }}</p>
+            <p>Amount: ${{ amount }}</p>
+            <form method="post" action="/confirm_transfer">
+                <input type="hidden" name="sender_username" value="{{ sender[1] }}">
+                <input type="hidden" name="recipient_username" value="{{ recipient[1] }}">
+                <input type="hidden" name="amount" value="{{ amount }}">
+                <button type="submit" class="form-button">Confirm</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

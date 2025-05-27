@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Transaction Receipt</title>
+</head>
+<body>
+    <div class="center-container">
+        <div class="form-container">
+            <h1 class="form-title">Transaction Receipt</h1>
+            <p><strong>Sender:</strong> {{ sender }}</p>
+            <p><strong>Recipient:</strong> {{ recipient }}</p>
+            <p><strong>Amount Transferred:</strong> ${{ amount }}</p>
+            <p><strong>Status:</strong> Success</p>
+
+            <!-- Back to Dashboard Button -->
+            <a href="/dashboard" class="form-button">Back to Dashboard</a>
+        </div>
+    </div>
+</body>
+</html>

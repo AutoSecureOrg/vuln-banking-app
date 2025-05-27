@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Feedback</title>
+</head>
+<body>
+    <div class="center-container">
+        <div class="feedback">
+            <div class="form-container">
+                <h1 class="form-title">Leave Feedback</h1>
+                <form method="POST">
+                    <label for="comment">Your Feedback:</label>
+                    <input type="text" name="comment" required><br>
+                    <button type="submit" class="form-button">Submit</button>
+                </form>
+
+                <div class="output">
+                    {% if comment %}
+                    <h3>Latest Feedback:</h3>
+                    <p>{{ comment | safe }}</p>  <!-- Allows XSS & HTML Injection -->
+                    {% endif %}
+                </div>
+                
+                <br>
+                <br>
+                <div class="nav">
+                    <a href="/dashboard" class="form-button">Back to Dashboard</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

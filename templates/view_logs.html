@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+    <title>View Transaction Logs</title>
+    <style>
+        .scrollable-container {
+            color: black;
+            max-height: 400px;
+            overflow-y: scroll;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #f9f9f9;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="center-container">
+        <div>
+            <div class="hist-form-container">
+                <h1 class="form-title">Transaction Logs</h1>
+                <form method="POST">
+                    <label for="filter">Filter Logs (Enter Recipient Username):</label>
+                    <input type="text" id="filter" name="filter" required placeholder="Filter" value="{{ recipient }}"><br>
+                    <button type="submit" class="form-button">Search Logs</button>
+                </form>
+
+                <h3>Transaction Log Output:</h3>
+                <div class="scrollable-container">
+                    <table border="1">
+                        <tr>
+                            <th>Sender</th>
+                            <th>Recipient</th>
+                            <th>Amount</th>
+                        </tr>
+                        {% for row in transactions %}
+                        <tr>
+                            {% for value in row %}
+                                <td>{{ value }}</td>
+                            {% endfor %}
+                        </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+                
+                <br><br><br>
+                <a href="/dashboard" class="history-button">Back to Dashboard</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
